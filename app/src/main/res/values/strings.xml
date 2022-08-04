@@ -2,4 +2,7 @@
     <string name="app_name">Tither</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_now_label">Start Now</string>
+    <string name="in_obedience">in obedience to God\'s command</string>
+    <string name="calculate_your_tithe">Calculate your tithe and build a good habit of giving</string>
 </resources>

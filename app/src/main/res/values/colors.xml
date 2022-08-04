@@ -8,4 +8,19 @@
     <color name="secondaryDarkColor">#c7c7c7</color>
     <color name="primaryTextColor">#000000</color>
     <color name="secondaryTextColor">#000000</color>
+
+    <color name="blue_light">#C9DAE5</color>
+    <color name="icon_color">#0A72B9</color>
+    <color name="card_color">#0A71B8</color>
+    <color name="bold_text_color">#315167</color>
+
+    <color name="hint">#D1D0D0</color>
+    <color name="warning">#EF3C47</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bottom_appbar_color">#D6ECFC</color>
+    <color name="overflow_button">#C4C4C4</color>
 </resources>
