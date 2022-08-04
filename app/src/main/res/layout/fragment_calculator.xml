@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="24dp"
     tools:context=".view.FragmentCalculator">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountInputFieldTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:hint="Enter Amount"
+        app:boxBackgroundColor="@color/transparent"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/calculatorInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fontFamily="@font/firasans_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:paddingVertical="30dp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            tools:text="1234567890" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.konaire.numerickeyboard.NumericKeyboard
+        android:id="@+id/keypad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:field="@+id/code"
+        app:keyTextColor="@color/primaryDarkColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountInputFieldTIL" />
 </androidx.constraintlayout.widget.ConstraintLayout>
