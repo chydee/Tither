@@ -5,4 +5,6 @@
     <string name="start_now_label">Start Now</string>
     <string name="in_obedience">in obedience to God\'s command</string>
     <string name="calculate_your_tithe">Calculate your tithe and build a good habit of giving</string>
+    <string name="do_you">Do you love <b>Tither</b> app?</string>
+    <string name="share_tither_label">Share Tither</string>
 </resources>

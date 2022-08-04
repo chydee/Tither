@@ -12,9 +12,9 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
-        android:hint="Enter Amount"
+
         app:boxBackgroundColor="@color/transparent"
         app:hintAnimationEnabled="false"
         app:hintEnabled="false"
@@ -27,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white"
+            android:hint="Enter Amount"
             android:fontFamily="@font/firasans_bold"
             android:gravity="center"
             android:inputType="number"
@@ -36,17 +37,33 @@
             tools:text="1234567890" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCompute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/firasans_semibold"
+        android:minHeight="70dp"
+        android:text="Compute Tithe"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/amountInputFieldTIL"
+        app:layout_constraintStart_toStartOf="@+id/amountInputFieldTIL"
+        app:layout_constraintTop_toBottomOf="@+id/amountInputFieldTIL" />
+
     <com.konaire.numerickeyboard.NumericKeyboard
         android:id="@+id/keypad"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="bottom"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
         app:field="@+id/code"
         app:keyTextColor="@color/primaryDarkColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/amountInputFieldTIL" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCompute" />
 </androidx.constraintlayout.widget.ConstraintLayout>

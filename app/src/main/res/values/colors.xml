@@ -23,4 +23,6 @@
 
     <color name="bottom_appbar_color">#D6ECFC</color>
     <color name="overflow_button">#C4C4C4</color>
+    <color name="green">#00C48C</color>
+    <color name="carribean_green">#00C48C</color>
 </resources>
